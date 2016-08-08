@@ -16,12 +16,13 @@
 
         <ImageView
             android:id="@+id/back"
-            android:layout_width="32dp"
-            android:layout_height="32dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
             android:clickable="true"
             android:onClick="onClick"
             android:padding="4dp"
-            android:src="@drawable/back_white" />
+            android:src="@drawable/back_white"
+            android:layout_margin="4dp" />
 
         <TextView
             android:id="@+id/folder_name"
@@ -30,9 +31,10 @@
             android:layout_weight="1"
             android:fontFamily="monospace"
             android:gravity="center"
-            android:text="Folder Name"
+            android:text="DISK #1"
             android:textColor="#fff"
-            android:textSize="18sp" />
+            android:textSize="24dp"
+            android:textStyle="bold" />
 
         <android.support.v7.widget.SwitchCompat
             android:id="@+id/is_folder"
@@ -41,7 +43,8 @@
             android:layout_gravity="center_vertical"
             android:checked="false"
             android:padding="4dp"
-            android:theme="@style/AppThemeSwitch" />
+            android:theme="@style/AppThemeSwitch"
+            android:layout_marginRight="4dp" />
 
     </LinearLayout>
 
